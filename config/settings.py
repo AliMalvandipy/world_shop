@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'products.apps.ProductsConfig'
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
