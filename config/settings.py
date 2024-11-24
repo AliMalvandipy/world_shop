@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     #Local Apps
     'accounts',
     'pages',
-    'products.apps.ProductsConfig'
+    'products.apps.ProductsConfig',
     'cart.apps.CartConfig',
 ]
 
@@ -87,6 +87,8 @@ TEMPLATES = [
 
                  # `allauth` needs this from django
                 'django.template.context_processors.request',
+                #Custom context processors
+                'cart.context_processors.cart',
             ],
         },
     },
